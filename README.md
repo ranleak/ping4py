@@ -31,6 +31,7 @@ By default, Linux distributions ship `ping` as part of the larger `iputils` suit
    ```
 
 3. **Configure the Build Environment**
+
    ```
    meson setup builddir \
    -DBUILD_ARPING=false \
@@ -41,14 +42,18 @@ By default, Linux distributions ship `ping` as part of the larger `iputils` suit
    ```
 
 4. **Compile the Binary**
+
    ```
 
    ninja -C builddir
 
    ```
 
-The fresh, isolated binary is now compiled and located at ```builddir/ping/ping```.
+The fresh, isolated binary is now compiled and located at `builddir/ping/ping`.
 
 ## Credits
+
 - Contributors to the [iputils](https://github.com/iputils/iputils) project
+  ![iputils Contributor Map](/readme-assets/iputils_contributors_small.png)
 - [Rich](https://github.com/Textualize/rich) by [Textualize](https://www.textualize.io/) for our beautiful user interface
+  ![rich Contributor Map](/readme-assets/rich_contributors_small.png)
