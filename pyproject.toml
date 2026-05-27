@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ping4py"
+version = "0.1.0"
+description = "An interactive, beautiful Rich wrapper around an isolated ping binary."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "rich>=13.0.0"
+]
+
+[project.scripts]
+ping4py = "ping4py.cli:main"
+
+[tool.setuptools.package-data]
+pyping = ["bin/*"]
